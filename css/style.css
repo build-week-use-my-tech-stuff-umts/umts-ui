@@ -350,7 +350,7 @@ header nav a:hover {
 }
 #meet h1 {
   font-family: 'Yantramanav', sans-serif;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 500;
 }
 #cards {
@@ -361,15 +361,47 @@ header nav a:hover {
   justify-content: space-around;
 }
 #cards div {
-  border: 1px solid black;
+  border: 2px solid lightgray;
   width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-content: center;
   margin: 2vh 0;
+  transition: all 0.2s ease-in-out;
+  min-width: 270px;
 }
 #cards div img {
   height: 30vh;
   margin: 0 auto;
+  padding-top: 1vh;
+  min-width: 253px;
+}
+@media screen and (max-width: 990px) {
+  #cards div {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 725px) {
+  #cards div {
+    width: 70%;
+  }
+}
+#cards div p {
+  padding: 1vh 0;
+  margin: 0 1vh;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+#cards div h4 {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-bottom: 2px solid lightgray;
+  margin: 0 1vh;
+  padding: 0.4vh 0;
+}
+#cards div:hover {
+  transform: scale(1.1);
 }
