@@ -368,15 +368,9 @@ header nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
-#steps div section {
-  margin: 0;
-  display: flex;
-  width: 40%;
-}
-#steps div section img {
-  margin-top: 20%;
-  width: 30%;
+#steps div img {
   height: 50%;
 }
 #steps div h1 {
@@ -387,8 +381,12 @@ header nav a:hover {
   height: 50%;
 }
 #steps div p {
-  height: 50%;
-  font-size: 2rem;
+  padding-bottom: 6vh;
+  font-size: 1.7rem;
+  vertical-align: text-bottom;
+}
+#steps div #right-text {
+  padding-top: 2vh;
 }
 @media screen and (max-width: 990px) {
   #steps div {
@@ -401,6 +399,19 @@ header nav a:hover {
     flex-direction: column;
     width: 85%;
   }
+}
+#steps #mid-step {
+  width: 33%;
+  border-left: 2px solid lightgrey;
+  border-right: 2px solid lightgrey;
+}
+#steps #right-step img {
+  max-width: 119.88px;
+  height: auto;
+  margin-top: 1vh;
+}
+#steps #right-step p {
+  padding-bottom: 4vh;
 }
 #meet {
   width: 90%;
