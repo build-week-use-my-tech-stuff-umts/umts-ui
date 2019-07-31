@@ -467,7 +467,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-#cards div {
+#cards .card-class {
   border: 2px solid lightgray;
   width: 30%;
   display: flex;
@@ -478,28 +478,28 @@ footer {
   min-width: 270px;
 }
 @media screen and (max-width: 990px) {
-  #cards div {
+  #cards .card-class {
     width: 40%;
   }
 }
 @media screen and (max-width: 725px) {
-  #cards div {
+  #cards .card-class {
     width: 70%;
   }
 }
-#cards div section {
+#cards .card-class section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#cards div section img {
+#cards .card-class section img {
   height: 30vh;
   margin: 0 auto;
   padding-top: 1vh;
   min-width: 253px;
 }
-#cards div section h4 {
+#cards .card-class section h4 {
   width: 90%;
   text-align: center;
   font-size: 0.75rem;
@@ -508,7 +508,7 @@ footer {
   margin: 0 1vh;
   padding: 0.4vh 0;
 }
-#cards div p {
+#cards .card-class p {
   padding: 2vh 0;
   margin: 0 3vh;
   font-family: 'Yantramanav', sans-serif;
