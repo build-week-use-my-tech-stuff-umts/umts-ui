@@ -157,14 +157,31 @@ header {
     padding-top: 1vh;
   }
 }
+@media screen and (max-width: 500px) {
+  header {
+    height: 20vh;
+    padding: 0;
+  }
+}
 header #logo {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 3vw;
 }
 header #logo img {
-  height: 80%;
+  height: 75%;
+}
+@media screen and (max-width: 990px) {
+  header #logo img {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  header #logo img {
+    height: 65%;
+  }
 }
 header nav {
   margin-right: 10vw;
@@ -177,20 +194,46 @@ header nav {
     justify-content: space-around;
   }
 }
+@media screen and (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+  }
+}
 header nav a {
   text-decoration: none;
   font-size: 1.5rem;
-  color: white;
   margin: 0 5vw;
   border-bottom: 3px solid transparent;
+  color: white;
 }
 @media screen and (max-width: 990px) {
   header nav a {
     margin: 0;
   }
 }
+@media screen and (max-width: 500px) {
+  header nav a {
+    text-align: center;
+    width: 100vw;
+    border-top: 2px solid black;
+    padding: 0.5vh 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  header nav #login {
+    border-bottom: 2px solid black;
+  }
+}
 header nav a:hover {
   border-bottom: 3px solid white;
+}
+@media screen and (max-width: 500px) {
+  header nav a:hover {
+    border-bottom: 3px solid transparent;
+  }
 }
 #main-content {
   height: 64vh;
@@ -213,6 +256,11 @@ header nav a:hover {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  #main-content {
+    height: 55vh;
   }
 }
 #main-left {
@@ -252,7 +300,7 @@ header nav a:hover {
 #main-left a {
   color: white;
   text-decoration: none;
-  background: #ef6f6c;
+  background: #3b60a5;
   width: 45%;
   margin: 2vh 0;
   padding: 2vh;
@@ -266,7 +314,7 @@ header nav a:hover {
   }
 }
 #main-left a:hover {
-  background: #dd4e4c;
+  background: #123c70;
 }
 #main-right {
   display: flex;
@@ -282,6 +330,12 @@ header nav a:hover {
     align-items: center;
     background: rgba(3, 3, 3, 0.5);
     justify-content: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  #main-right {
+    height: 30vh;
+    margin-bottom: 1.3vh;
   }
 }
 #main-right img {
@@ -342,6 +396,12 @@ header nav a:hover {
     width: 45%;
   }
 }
+@media screen and (max-width: 500px) {
+  #steps div {
+    flex-direction: column;
+    width: 85%;
+  }
+}
 #meet {
   width: 90%;
   margin: 3vh auto 2vh;
@@ -388,8 +448,8 @@ header nav a:hover {
   }
 }
 #cards div p {
-  padding: 1vh 0;
-  margin: 0 1vh;
+  padding: 2vh 0;
+  margin: 0 3vh;
   font-family: 'Yantramanav', sans-serif;
   font-weight: 600;
   font-size: 1.15rem;
