@@ -178,7 +178,7 @@ header #logo img {
     height: 100%;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 500px) {
   header #logo img {
     height: 65%;
   }
@@ -235,10 +235,16 @@ header nav a:hover {
     border-bottom: 3px solid transparent;
   }
 }
+footer {
+  background: #262626;
+  width: 100%;
+  height: 8vh;
+  margin-top: 2vh;
+}
 #main-content {
   height: 64vh;
   width: 100%;
-  background-image: url(/images/Camera.jpeg);
+  background-image: url(/images/Camera-new.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -260,7 +266,7 @@ header nav a:hover {
 }
 @media screen and (max-width: 500px) {
   #main-content {
-    height: 55vh;
+    height: 50vh;
   }
 }
 #main-left {
@@ -297,6 +303,16 @@ header nav a:hover {
     font-size: 3.5rem;
   }
 }
+@media screen and (max-width: 500px) {
+  #main-left h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  #main-left h1 {
+    font-size: 2rem;
+  }
+}
 #main-left a {
   color: white;
   text-decoration: none;
@@ -311,6 +327,11 @@ header nav a:hover {
 @media screen and (max-width: 990px) {
   #main-left a {
     width: 35%;
+  }
+}
+@media screen and (max-width: 375px) {
+  #main-left a {
+    font-size: 1rem;
   }
 }
 #main-left a:hover {
@@ -334,8 +355,7 @@ header nav a:hover {
 }
 @media screen and (max-width: 500px) {
   #main-right {
-    height: 30vh;
-    margin-bottom: 1.3vh;
+    height: 32vh;
   }
 }
 #main-right img {
@@ -353,6 +373,11 @@ header nav a:hover {
   #main-right img {
     margin: 0 auto;
     width: 50vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  #main-right img {
+    min-width: 245px;
   }
 }
 #steps {
@@ -390,7 +415,6 @@ header nav a:hover {
 }
 @media screen and (max-width: 990px) {
   #steps div {
-    margin-bottom: 3vh;
     width: 45%;
   }
 }
@@ -405,10 +429,22 @@ header nav a:hover {
   border-left: 2px solid lightgrey;
   border-right: 2px solid lightgrey;
 }
+@media screen and (max-width: 990px) {
+  #steps #mid-step {
+    width: 45%;
+    border-left: none;
+    border-right: none;
+  }
+}
 #steps #right-step img {
   max-width: 119.88px;
   height: auto;
   margin-top: 1vh;
+}
+@media screen and (max-width: 990px) {
+  #steps #right-step img {
+    margin: 0;
+  }
 }
 #steps #right-step p {
   padding-bottom: 4vh;
@@ -436,17 +472,10 @@ header nav a:hover {
   width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-content: center;
   margin: 2vh 0;
   transition: all 0.2s ease-in-out;
   min-width: 270px;
-}
-#cards div img {
-  height: 30vh;
-  margin: 0 auto;
-  padding-top: 1vh;
-  min-width: 253px;
 }
 @media screen and (max-width: 990px) {
   #cards div {
@@ -458,20 +487,33 @@ header nav a:hover {
     width: 70%;
   }
 }
-#cards div p {
-  padding: 2vh 0;
-  margin: 0 3vh;
-  font-family: 'Yantramanav', sans-serif;
-  font-weight: 600;
-  font-size: 1.15rem;
+#cards div section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#cards div h4 {
+#cards div section img {
+  height: 30vh;
+  margin: 0 auto;
+  padding-top: 1vh;
+  min-width: 253px;
+}
+#cards div section h4 {
+  width: 90%;
   text-align: center;
   font-size: 0.75rem;
   font-weight: 600;
   border-bottom: 2px solid lightgray;
   margin: 0 1vh;
   padding: 0.4vh 0;
+}
+#cards div p {
+  padding: 2vh 0;
+  margin: 0 3vh;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: 600;
+  font-size: 1.15rem;
 }
 #cards div:hover {
   transform: scale(1.1);

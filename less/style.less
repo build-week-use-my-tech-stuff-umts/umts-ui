@@ -171,7 +171,7 @@ header {
 			@media screen and (max-width: 990px) {
 				height: 100%;
 			}
-			@media screen and (max-width: 550px) {
+			@media screen and (max-width: 500px) {
 				height: 65%;
 			}
 		}
@@ -222,10 +222,17 @@ header {
 	}
 }
 
+footer {
+	background: rgb(38, 38, 38);
+	width: 100%;
+	height: 8vh;
+	margin-top: 2vh;
+}
+
 #main-content {
 	height: 64vh;
 	width: 100%;
-	background-image: url(/images/Camera.jpeg);
+	background-image: url(/images/Camera-new.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -241,7 +248,7 @@ header {
 		align-items: center;
 	}
 	@media screen and (max-width: 500px) {
-		height: 55vh;
+		height: 50vh;
 	}
 
 }
@@ -273,6 +280,12 @@ header {
 			text-align: center;
 			font-size: 3.5rem;
 		}
+		@media screen and (max-width: 500px) {
+			font-size: 2.5rem;
+		}
+		@media screen and (max-width: 375px) {
+			font-size: 2rem;
+		}
 	}
 	a {
 		color: white;
@@ -286,6 +299,9 @@ header {
 		text-align: center;
 		@media screen and (max-width: 990px) {
 			width: 35%;
+		}
+		@media screen and (max-width: 375px) {
+			font-size: 1rem;
 		}
 	}
 	a:hover {
@@ -307,13 +323,14 @@ header {
 		justify-content: center;
 	}
 	@media screen and (max-width: 500px) {
-		height: 30vh;
-		margin-bottom: 1.3vh;
+		height: 32vh;
+		//margin-bottom: 1.3vh;
 	}
 	img {
 		margin-left: 10%;
 		max-height: 500px;
 		width: 40vw;
+
 		@media screen and (min-width: 1983px) {
 			width: 30vw;
 			margin-left: 20%;
@@ -322,7 +339,9 @@ header {
 			margin: 0 auto;
 			width: 50vw;
 		}
-		
+		@media screen and (max-width: 500px) {
+			min-width: 245px;	
+		}
 	}
 }
 
@@ -331,7 +350,6 @@ header {
 	justify-content: space-around;
 	padding-top: 2vh;
 	flex-wrap: wrap;
-	//background: #dd4e4c;
 	div {
 		width: 27.5%;
 		height: 25vh;
@@ -340,8 +358,6 @@ header {
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
-		//border: 2px solid lightgray;
-		//background: #ef6f6c;
 		img {
 			height:50%;
 		}
@@ -361,7 +377,7 @@ header {
 			padding-top: 2vh;
 		}
 		@media screen and (max-width: 990px) {
-			margin-bottom: 3vh;
+			//margin-bottom: 3vh;
 			width: 45%;
 		}
 		@media screen and (max-width: 500px) {
@@ -373,19 +389,26 @@ header {
 		width: 33%;
 		border-left: 2px solid lightgrey;
 		border-right: 2px solid lightgrey;
+		@media screen and (max-width: 990px) {
+			width: 45%;
+			border-left: none;
+			border-right: none;
+		}
+
 	}
 	#right-step {
 		img {
 			max-width: 119.88px;
 			height: auto;
 			margin-top: 1vh;
+			@media screen and (max-width: 990px) {
+				margin: 0;
+			}
 		}
 		p {
 			padding-bottom: 4vh;
 		}
 	}
-
-	
 }
 #meet {
 	width: 90%;
@@ -409,41 +432,45 @@ header {
 		width: 30%;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
 		align-content: center;
 		margin: 2vh 0;
 		transition: all .2s ease-in-out;
 		min-width: 270px;
-		img {
-			height: 30vh;
-			margin: 0 auto;
-			padding-top: 1vh;
-			min-width: 253px;
-		}
 		@media screen and (max-width: 990px) {
 			width: 40%;
 		}
 		@media screen and (max-width: 725px) {
 			width: 70%;
 		}
+		section {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			img {
+				height: 30vh;
+				margin: 0 auto;
+				padding-top: 1vh;
+				min-width: 253px;
+			}
+			h4 {
+				width: 90%;
+				text-align: center;
+				font-size: .75rem;
+				font-weight: 600;
+				border-bottom: 2px solid lightgray;
+				margin: 0 1vh;
+				padding: .4vh 0;
+			}
+		}
+
 		p {
 			padding: 2vh 0;
 			margin: 0 3vh;
 			font-family: 'Yantramanav', sans-serif;
 			font-weight: 600;
 			font-size: 1.15rem;
-			// text-align: justify;
-
 		}
-		h4 {
-			text-align: center;
-			font-size: .75rem;
-			font-weight: 600;
-			border-bottom: 2px solid lightgray;
-			margin: 0 1vh;
-			padding: .4vh 0;
-		}
-
 	}
 	div:hover {
 		transform: scale(1.1); 
